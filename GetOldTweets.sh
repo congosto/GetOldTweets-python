@@ -21,7 +21,7 @@ echo " "
 echo "----------------------------------------"
 echo "------> Welcome to GetOldTweets <------"
 echo "----------------------------------------"
-file_GetOldTweets=`find $HOME -name GetOldTweets-python.sh 2>/dev/null`
+file_GetOldTweets=`find $HOME -name GetOldTweets.sh 2>/dev/null`
 echo ${file_GetOldTweets}
 path_GetOldTweets=${file_GetOldTweets%/*}
 cd $path_GetOldTweets
