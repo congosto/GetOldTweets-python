@@ -25,7 +25,6 @@ file_GetOldTweets=`find $HOME -name GetOldTweets.sh 2>/dev/null`
 echo ${file_GetOldTweets}
 path_GetOldTweets=${file_GetOldTweets%/*}
 cd $path_GetOldTweets
-cd  ..
 root=`pwd`
 cd $root
 git fetch origin master  > /dev/null  2>&1
