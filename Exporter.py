@@ -95,7 +95,7 @@ def main(argv):
 		def receiveBuffer(tweets):
 			for t in tweets:
 				if format == 'txt':
-					outputFile.write(('\n%s\t%s\t@%s\t%s\t"%s"\t%s\t%s\t%s\t"%s"\t%s' % ( t.id,t.date.strftime("%Y-%m-%d %H:%M:%S"),t.username, t.text,  t.geo,t.retweets, t.favorites, t.mentions, t.hashtags, t.permalink)))
+					outputFile.write(('\n%s\t%s\t@%s\t%s\t%s\t%s\t%s\t%s\t%s\t%s' % ( t.id,t.date.strftime("%Y-%m-%d %H:%M:%S"),t.username, t.text,  t.geo,t.retweets, t.favorites, t.mentions, t.hashtags, t.permalink)))
 				if format == 'csv':
 					row=[]
 					row.append(t.id)
@@ -105,7 +105,6 @@ def main(argv):
 					row.append(t.retweets)
 					row.append(t.favorites)
 					row.append(t.mentions)
-					row.append(statuse.user.id)
 					row.append(t.hashtags)
 					row.append(t.permalink)
 					writer.writerow(row)
