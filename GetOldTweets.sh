@@ -45,4 +45,4 @@ then
 else
   echo "GetOldTweets is up to date"
 fi
-python ${root}/GetOldTweets_menu.py ${root} --linux
+python2.7 ${root}/GetOldTweets_menu.py ${root} --linux

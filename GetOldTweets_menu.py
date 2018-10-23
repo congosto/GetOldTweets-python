@@ -91,9 +91,9 @@ def main():
         max_tweets= raw_input ('Enter max number of tweets: ')
         outputfile= raw_input ( 'Enter output file name: ')
         if args.windows:
-          command="python %s/Exporter.py --username %s --maxtweets %s --output %s" % (root,user,max_tweets,outputfile) 
+          command="python2.7 %s/Exporter.py --username %s --maxtweets %s --output %s" % (root,user,max_tweets,outputfile) 
         else:
-          command="python %s/Exporter.py --username '%s' --maxtweets '%s' --output '%s'" % (root,user,max_tweets,outputfile)
+          command="python2.7 %s/Exporter.py --username '%s' --maxtweets '%s' --output '%s'" % (root,user,max_tweets,outputfile)
         os.system(command)
       elif option ==2:
         os.chdir(path_experiment)
@@ -103,9 +103,9 @@ def main():
         max_tweets= raw_input ('Enter max number of tweets: ')
         outputfile= raw_input ( 'Enter output file name: ')
         if args.windows:
-          command="python %s/Exporter.py --username %s --since %s --until %s --maxtweets %s --output %s" % (root,user,since,until,max_tweets,outputfile) 
+          command="python2.7 %s/Exporter.py --username %s --since %s --until %s --maxtweets %s --output %s" % (root,user,since,until,max_tweets,outputfile) 
         else:
-          command="python %s/Exporter.py --username '%s' --since '%s' --until '%s' --maxtweets '%s' --output '%s'" % (root,user,since,until,max_tweets,outputfile)
+          command="python2.7 %s/Exporter.py --username '%s' --since '%s' --until '%s' --maxtweets '%s' --output '%s'" % (root,user,since,until,max_tweets,outputfile)
         os.system(command)
       if option ==3:
         os.chdir(path_experiment)
@@ -114,9 +114,9 @@ def main():
         max_tweets= raw_input ('Enter max number of tweets: ')
         outputfile= raw_input ( 'Enter output file name: ')
         if args.windows:
-          command="python %s/Exporter.py --querysearch %s --maxtweets %s --output %s" % (root,user,max_tweets,outputfile) 
+          command="python2.7 %s/Exporter.py --querysearch %s --maxtweets %s --output %s" % (root,user,max_tweets,outputfile) 
         else:
-          command="python %s/Exporter.py --querysearch '%s' --maxtweets '%s' --output '%s'" % (root,user,max_tweets,outputfile)
+          command="python2.7 %s/Exporter.py --querysearch '%s' --maxtweets '%s' --output '%s'" % (root,user,max_tweets,outputfile)
         os.system(command)
       elif option ==4:
         os.chdir(path_experiment)
@@ -126,9 +126,9 @@ def main():
         max_tweets= raw_input ('Enter max number of tweets: ')
         outputfile= raw_input ( 'Enter output file name: ')
         if args.windows:
-          command="python %s/Exporter.py --querysearch %s --since %s --until %s --maxtweets %s --output %s" % (root,user,since,until,max_tweets,outputfile) 
+          command="python2.7 %s/Exporter.py --querysearch %s --since %s --until %s --maxtweets %s --output %s" % (root,user,since,until,max_tweets,outputfile) 
         else:
-          command="python %s/Exporter.py --querysearch '%s' --since '%s' --until '%s' --maxtweets '%s' --output '%s'" % (root,user,since,until,max_tweets,outputfile)
+          command="python2.7 %s/Exporter.py --querysearch '%s' --since '%s' --until '%s' --maxtweets '%s' --output '%s'" % (root,user,since,until,max_tweets,outputfile)
         os.system(command)
       elif option == 5:
          exit='y'
